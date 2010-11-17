@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repository/macports/!svn/ver/45163/trunk/dports/lang/python23/files
+END
+patch-darwin8-pyconfig.h.in
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repository/macports/!svn/ver/21487/trunk/dports/lang/python23/files/patch-darwin8-pyconfig.h.in
+END
+patch-configure.in
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repository/macports/!svn/ver/45163/trunk/dports/lang/python23/files/patch-configure.in
+END
+patch-Makefile.pre.in
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repository/macports/!svn/ver/21487/trunk/dports/lang/python23/files/patch-Makefile.pre.in
+END
+patch-setup.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repository/macports/!svn/ver/21487/trunk/dports/lang/python23/files/patch-setup.py
+END
+python23
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repository/macports/!svn/ver/34729/trunk/dports/lang/python23/files/python23
+END
+patch-Include_pyport.h.diff
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repository/macports/!svn/ver/35260/trunk/dports/lang/python23/files/patch-Include_pyport.h.diff
+END
