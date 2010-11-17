@@ -1,5 +1,5 @@
---- configure.in.orig	2010-11-16 18:07:06.000000000 -0600
-+++ configure.in	2010-11-16 18:08:36.000000000 -0600
+--- configure.in.orig	2010-11-16 22:37:25.000000000 -0600
++++ configure.in	2010-11-16 22:39:59.000000000 -0600
 @@ -159,7 +159,7 @@
    # it craps out if _XOPEN_EXTENDED_SOURCE is defined. Apparently,
    # this is fixed in 10.3, which identifies itself as Darwin/7.*
@@ -53,7 +53,7 @@
                         Defined for Solaris 2.6 bug in pthread header.)
  		       ;;
 -      SunOS/5.8) AC_DEFINE(HAVE_BROKEN_POSIX_SEMAPHORES, 1,
-+      SunOS/5.8 | Darwin/8* | Darwin/9*) AC_DEFINE(HAVE_BROKEN_POSIX_SEMAPHORES, 1,
++      SunOS/5.8 | Darwin/8* | Darwin/9* | Darwin/10*) AC_DEFINE(HAVE_BROKEN_POSIX_SEMAPHORES, 1,
  		       Define if the Posix semaphores do not work on your system)
  		       ;;
        esac

@@ -68,6 +68,11 @@ platform darwin 9 {
                                 patch-Include_pyport.h.diff
 }
 
+platform darwin 10 {
+        patchfiles-append       patch-darwin8-pyconfig.h.in \
+                                patch-Include_pyport.h.diff
+}
+
 variant pydebug {
 	configure.args-append	--with-pydebug
 }
