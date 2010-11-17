@@ -1,0 +1,1 @@
+After cloning this repo do a `port portindex` in the root of it and add the path to /opt/local/etc/macports/sources.conf with the file:/// protocol.
