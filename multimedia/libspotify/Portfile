@@ -10,7 +10,7 @@ maintainers         brandonvalentine.com:mail:brandon
 description         Spotify client library
 long_description    The libspotify C API package allows third-party developers to write applications that utilize the Spotify music streaming service.
 homepage            https://developer.spotify.com/technologies/libspotify/
-license             http://developer.spotify.com/en/libspotify/terms-of-use/
+license             {Restricted Noncommercial}
 
 platforms           darwin
 
