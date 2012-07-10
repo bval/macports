@@ -19,7 +19,7 @@ checksums           rmd160 ba7ab9a545dab5b4ff3feaa90e617be561614822 \
 depends_lib         port:boost
 configure.args      --disable-examples
 
-variant qt {
+variant qt description {Add QT support} {
     depends_lib-append      port:qt4-mac
     configure.args-append   --enable-qt
 }
