@@ -2,24 +2,40 @@
 # $Id$
 
 PortSystem          1.0
+
 name                gecode
-version             3.7.3
+version             4.0.0
 categories          devel math
 platforms           darwin
 maintainers         brandonvalentine.com:brandon
+license             MIT
+
 description         Generic Constraint Development Environment
+
 long_description    Gecode is a toolkit for developing constraint-based systems and applications.\
                     Gecode provides a constraint solver with state-of-the-art \
                     performance while being modular and extensible.
+
 homepage            http://www.gecode.org/
-license             MIT
-master_sites        http://www.gecode.org/download/
-checksums           rmd160 ba7ab9a545dab5b4ff3feaa90e617be561614822 \
-                    sha256 e7cc8bcc18b49195fef0544061bdd2e484a1240923e4e85fa39e8d6bb492854c
-depends_lib         port:boost
-configure.args      --disable-examples
+master_sites        ${homepage}download/
+use_7z              yes
+
+checksums           rmd160  1bcbb998c16abf0232f8b86fff90dfc4ef2eb691 \
+                    sha256  ed0630fdf265bbe55ed0242f79fa270f47e6015feaf20dbbd3258026a07a891e
+
+depends_build       port:boost
+
+configure.args      --disable-doc-dot \
+                    --disable-examples \
+                    --disable-qt \
+                    --with-boost-include=${prefix}/include/boost
 
 variant qt description {Add QT support} {
     depends_lib-append      port:qt4-mac
+    configure.args-delete   --disable-qt
     configure.args-append   --enable-qt
 }
+
+livecheck.type      regex
+livecheck.url       [lindex ${master_sites} 0]
+livecheck.regex     ${name}-(\[0-9.\]+)${extract.suffix}
